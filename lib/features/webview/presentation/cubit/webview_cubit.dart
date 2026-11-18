@@ -54,37 +54,7 @@ class WebViewCubit extends Cubit<WebViewState> {
     }
   }
 
-  void startMonitoring() {
-    _subscription ??=
-        _connectivityService.onConnectivityChanged.listen(
-      (_) async {
-        final online = await checkConnection(
-          updateState: false,
-        );
-
-        if (isClosed) return;
-
-        if (!online) {
-          emit(
-            state.copyWith(
-              status: PortalStatus.offline,
-            ),
-          );
-        }
-      },
-      onError: (_) {
-        if (!isClosed) {
-          emit(
-            state.copyWith(
-              status: PortalStatus.offline,
-            ),
-          );
-        }
-      },
-    );
-
-    checkConnection();
-  }
+ 
 
   void onPageStarted() {
     if (isClosed) return;

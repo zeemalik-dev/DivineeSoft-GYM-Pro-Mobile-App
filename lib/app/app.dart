@@ -26,7 +26,7 @@ class GymProApp extends StatelessWidget {
             create: (_) => WebViewCubit(
               connectivityService:
                   context.read<ConnectivityService>(),
-            )..startMonitoring(),
+            ),
             child: MaterialApp(
               title: 'DivineeSoft GYM Pro',
               debugShowCheckedModeBanner: false,

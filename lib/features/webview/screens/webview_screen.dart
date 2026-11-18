@@ -299,7 +299,9 @@ class _WebViewScreenState extends State<WebViewScreen>
           unawaited(_handleBack());
         }
       },
-      child: SafeArea(
+      child: SafeArea
+      
+      (
         child: Scaffold(
           backgroundColor: AppTheme.navy,
           body: SafeArea(
