@@ -11,16 +11,16 @@ flutter_native_splash:
 
   android_12:
     color: "#0B0E14"
-    image: assets/app_logo.png
+    image: assets/app_icon.png
 
 flutter_launcher_icons:
   android: true
   ios: false
 
-  image_path: assets/app_logo.png
+  image_path: assets/app_icon.png
 
   adaptive_icon_background: "#0B0E14"
-  adaptive_icon_foreground: assets/app_logo.png
+  adaptive_icon_foreground: assets/app_icon.png
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
