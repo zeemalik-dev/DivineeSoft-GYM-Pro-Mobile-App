@@ -6,7 +6,7 @@ flutter_native_splash:
   image: assets/app_logo.png
 
   android: true
-  ios: false
+  ios: true
   fullscreen: false
 
   android_12:
@@ -15,7 +15,7 @@ flutter_native_splash:
 
 flutter_launcher_icons:
   android: true
-  ios: false
+  ios: true
 
   image_path: assets/app_icon.png
 
